@@ -19,3 +19,6 @@ auch wenn diese das "Wird der Code von der Communtiy wieder Verwende?"
 wieder kauppt machen würde 
 
 Du kannst deinen code per Ticket support senden
+
+# von wo sind die Copy Codes:
+CodingKeks
