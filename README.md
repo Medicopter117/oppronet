@@ -22,3 +22,8 @@ Du kannst deinen code per Ticket support senden
 
 # von wo sind die Copy Codes:
 CodingKeks
+
+# Links:
+CodingKeks: https://discord.gg/codingkeks
+
+OPPRO.NET: https://discord.gg/3rbVWaRTpD
