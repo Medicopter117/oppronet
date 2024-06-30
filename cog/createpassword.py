@@ -12,7 +12,7 @@ class Password(commands.Cog):
     @discord.option("länge", int, description="Bitte wähle eine Passwort-Länge! (mind. 8 - max 12)", required=True)
     async def createpassword(self,ctx, länge: int):
         if länge >= 13: # Maximale Passwort-Länge +1
-            await ctx.respond("Das Passwort darf nicht länger als 128 Zeichen sein!", ephemeral=True)
+            await ctx.respond("Das Passwort darf nicht länger als 12 Zeichen sein!", ephemeral=True)
             return
         if länge <= 7: # Mindest Passwort-Länge -1
             await ctx.respond("Das Passwort darf nicht kürzer als 8 Zeichen sein!", ephemeral=True)
