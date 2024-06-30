@@ -19,7 +19,9 @@ bot = discord.Bot(
 
 bot = commands.Bot(command_prefix="!")  # Beispiel-Prefix, ändern Sie es entsprechend Ihrer Konfiguration
 
-
+@bot.event
+async def on_ready():
+    print(f'Bot ist bereit. Eingeloggt als {bot.user}.')
 # NOT THIS EDIT
 
 if __name__ == "__main__":
@@ -38,10 +40,13 @@ async def main():
     await delayed_print(Fore.LIGHTWHITE_EX + "OPPRO.NET#0000", 0.5)
     await delayed_print(Fore.LIGHTYELLOW_EX + "OPPRO.NET#0000", 0.5)
     await delayed_print(Fore.LIGHTMAGENTA_EX + "OPPRO.NET Development", 1.5)
-    await delayed_print("                   ", 0)
-    await delayed_print(Fore.LIGHTCYAN_EX + "This Setup has created by LennyPegauOfficial", 0.9)
-    await delayed_print("                   ", 0)
-asyncio.run(main())
+    await delayed_print("", 0)  # Leere Zeichenkette, keine Verzögerung
+    await delayed_print(Fore.LIGHTCYAN_EX + "This Setup has been created by LennyPegauOfficial", 0.9)
+    await delayed_print("", 0)  # Leere Zeichenkette, keine Verzögerung
+    await delayed_print(Fore.LIGHTGREEN_EX + "Standardfarbe ist jetzt Grün", 1.0)
+
+if __name__ == "__main__":
+    asyncio.run(main())
 # Bot System
 load_dotenv()
 bot.run(os.getenv("TOKEN"))
