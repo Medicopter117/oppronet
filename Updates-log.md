@@ -8,3 +8,6 @@
 #### Hinzugefügt Emojis Datei um 21:51
 
 #### Edit Der Readme Datei um 23:10
+
+# 1.7.2024
+### Hinzugefügt: de.ymal - Deutsche Spache um 23:34
