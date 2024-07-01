@@ -1,0 +1,54 @@
+de:
+  news:
+    name: neuigkeiten
+    options:
+      title:
+        description: Hier die Überschreibt
+
+# Warnungs Commands:
+  warn:
+    name: verwarnen
+    description:
+    options:
+      member:
+        name: nutzer
+        description: wähle den nutzer aus
+      reason:
+        name: Grund
+        description: such dir ein Grund aus
+
+  unwarn:
+    name: warnung aufheben
+    options:
+      member:
+        name: nutzer
+        description: wähle den nutzer aus
+      reason:
+        name: Grund
+        description:
+
+  warnings:
+    name: warnungs
+    description: Zeige alle Warnungen eines Users vom Server an
+    options:
+      member:
+        name: nutzer
+
+  purge:
+    name: löschen
+    description: Lösche Nachrichten aus dem Kanal
+    options:
+      amount:
+        name: anzahl
+# Timeouts commands
+  timeout:
+    name: auszeit
+    description: auszeite einen Nutzer
+    options:
+      member:
+        name: nutzer
+
+  removetimeout:
+    name: entfernt_auszeit
+    description: Entferne eine Auszeit
+
