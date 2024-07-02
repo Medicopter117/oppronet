@@ -1,0 +1,54 @@
+en:
+  news:
+    name: news
+    options:
+    title:
+    description: Here the overrides
+
+# Warning commands:
+  warn:
+    name: warn
+    description:
+    options:
+      member:
+        name: user
+        description: select the user
+      reason:
+        name: reason
+      description: choose a reason
+
+  unwarn:
+    name: remove warning
+    options:
+      member:
+        name: user
+        description: select the user
+      reason:
+        name: reason
+        description: choose a reason
+
+
+  warnings:
+    name: warnings
+    description: Show all warnings of a user from the server
+    options:
+      member:
+      name: user
+
+  purge:
+    name: delete
+    description: Delete messages from the channel
+    options:
+      amount:
+      name: number
+# Timeouts commands
+  timeout:
+    name: timeout
+    description: timeout a user
+    options:
+      member:
+      name: user
+
+  removetimeout:
+    name: remove_timeout
+    description: Remove a timeout
