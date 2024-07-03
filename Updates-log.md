@@ -11,3 +11,6 @@
 
 # 1.7.2024
 ### Hinzugefügt: de.ymal - Deutsche Spache um 23:34
+
+# 2.7.2024
+### hinzugefügt der en.yaml um (Uhrzeit vergessen)
