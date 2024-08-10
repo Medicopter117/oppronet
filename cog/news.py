@@ -17,7 +17,7 @@ class News1(commands.Cog):
     @commands.has_permissions(administrator=True)
     async def news(
         self,
-        ctx,
+        ctx: discord.ApplicationContext,
         title: Option(str, "hier kommt der Title hin"),
         text: Option(str, "Hier kommt die Beschreibung hin"),
         channel: Option(discord.TextChannel, "Hier kommt der Channel hin")
