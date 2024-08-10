@@ -1,6 +1,7 @@
-import discord
-from discord.ext import commands
 from discord import slash_command, Option
+from discord.ext import commands
+import discord
+
 
 class Feedback(commands.Cog):
     def __init__(self, bot):
@@ -9,7 +10,7 @@ class Feedback(commands.Cog):
     @slash_command(description="Bewerte unsere Team Mitglieder")
     async def feedback(
             self,
-            ctx,
+            ctx: discord.ApplicationContext,
             nutzer: Option(discord.Member, "Den Member den du Bewerten willst (Nur Teamler!)"),
             sterne: Option(int, "Bewertung in Sternen (1-5)", choices=[1, 2, 3, 4, 5]),
             text: Option(str, "Die Bewertung")
@@ -38,7 +39,7 @@ class Feedback(commands.Cog):
             color=discord.Color.red()
         )
         embed.set_author(name=ctx.author.name, icon_url=ctx.author.avatar.url)
-        embed.add_field(name= "Deine Bewertung für",value=f"{nutzer} wurde erfolgreich versendet")
+        embed.add_field(name="Deine Bewertung für", value=f"{nutzer} wurde erfolgreich versendet")
         embed.add_field(name=f"mit {sterne} von 5", value="⭐" * sterne, inline=False)
         embed.set_footer(text="OPPRO.NET | LennyPegauOfficial has be created")
 
