@@ -1,1 +1,5 @@
-py-cord
+python-dotenv>=0.0.5
+aiosqlite>=0.20.0
+colorama>=0.4.6
+py-cord>=2.6.0
+ezcord>=0.6.5
