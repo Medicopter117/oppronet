@@ -9,16 +9,17 @@ __all__ = (
 
 class Bot(commands.Bot):
     def __init__(self, /, **kwargs):
+        command_prefix = kwargs.get("command_prefix", "!")
+
         intents = kwargs.get("intents", None)
         if not intents:
             intents = discord.Intents.default()
             intents.members = True
 
-        super().__init__("")
+        super().__init__(command_prefix=command_prefix, intents=intents, **kwargs)
 
     async def on_ready(self):
         print(f'Bot ist bereit. Eingeloggt als {self.user.name}.')
-
         print(Fore.LIGHTRED_EX + "OPPRO.NET#0000")
         print(Fore.LIGHTBLUE_EX + "OPPRO.NET#0000")
         print(Fore.LIGHTWHITE_EX + "OPPRO.NET#0000")
